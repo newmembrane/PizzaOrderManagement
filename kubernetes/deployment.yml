@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: pizzaordermanagement
-          image: username/pizzaordermanagement:latest
+          image: skcc02acr.azurecr.io/pizzaordermanagement:latest
           ports:
             - containerPort: 8080
