@@ -19,13 +19,6 @@ spec:
           image: skcc02acr.azurecr.io/pizzaordermanagement:latest
           ports:
             - containerPort: 8080
-          readinessProbe:
-            tcpSocket:
-              port: 8080
-            initialDelaySeconds: 10
-            timeoutSeconds: 2
-            periodSeconds: 5
-            failureThreshold: 10
           livenessProbe:
             tcpSocket:
               port: 8080
