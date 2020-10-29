@@ -19,3 +19,10 @@ spec:
           image: skcc02acr.azurecr.io/pizzaordermanagement:latest
           ports:
             - containerPort: 8080
+          env:
+            - name: configurl
+              valueFrom:
+                configMapKeyRef:
+                  name: apiurl
+                  key : url
+            
